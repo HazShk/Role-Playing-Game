@@ -1,0 +1,27 @@
+{
+  "name": "role-playing-game",
+  "version": "1.0.0",
+  "description": "a command-line role-playing game (RPG) in which a user battles against a series of enemies whose health and stats can be sustained by a potion.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HazShk/Role-Playing-Game.git"
+  },
+  "keywords": [
+    "rpg",
+    "jest",
+    "jest-another-rpg"
+  ],
+  "author": "Hassan Shaikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HazShk/Role-Playing-Game/issues"
+  },
+  "homepage": "https://github.com/HazShk/Role-Playing-Game#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
