@@ -15,10 +15,12 @@ test("creates an enemy object", () => {
 });
 test("gets enemy's health value", () => {
   const enemy = new Enemy("goblin", "sword");
+
   expect(enemy.getHealth()).toEqual(
     expect.stringContaining(enemy.health.toString())
   );
 });
+
 test("checks if enemy is alive or not", () => {
   const enemy = new Enemy("goblin", "sword");
   expect(enemy.isAlive()).toBeTruthy();
@@ -40,10 +42,4 @@ test("subtracts from enemy's health", () => {
   expect(enemy.health).toBe(oldHealth - 5);
   enemy.reduceHealth(99999);
   expect(enemy.health).toBe(0);
-});
-test("gets a description of the enemy", () => {
-  const enemy = new Enemy("goblin", "sword");
-
-  expect(enemy.getDescription()).toEqual(expect.stringContaining("goblin"));
-  expect(enemy.getDescription()).toEqual(expect.stringContaining("sword"));
 });
